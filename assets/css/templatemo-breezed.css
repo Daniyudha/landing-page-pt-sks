@@ -906,7 +906,7 @@ banner
 /* ==== Slider Style === */
 
 .Modern-Slider .item .img-fill {
-    height: 100vh;
+    height: 97vh;
     background: #1E1E1E;
 }
 
@@ -950,6 +950,74 @@ banner
 .Modern-Slider .PrevArrow:before {
     content: '\f104';
 }
+
+
+/* slider other */
+
+.other-Slider .item .img-fill {
+    height: 100vh;
+    background: #1E1E1E;
+}
+
+.other-Slider .item .info>div {
+    display: inline-block!important;
+    vertical-align: middle;
+}
+
+.other-Slider .NextArrow {
+    position: absolute;
+    top: 45%;
+    right: -50px;
+    border: 0 none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    /* padding: 0px auto; */
+    width: 40px;
+    height: auto;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'FontAwesome';
+    color: #1E1E1E80;
+    z-index: 5;
+    outline: none;
+}
+
+.other-Slider .NextArrow:hover {
+    background: #c3bfbf;
+}
+
+.other-Slider .NextArrow:before {
+    content: '\f105';
+}
+
+.other-Slider .PrevArrow {
+    position: absolute;
+    top: 45%;
+    left: -50px;
+    border: 0 none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    /* padding: 0px auto; */
+    width: 40px;
+    height: auto;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'FontAwesome';
+    color: #1E1E1E80;
+    z-index: 5;
+    outline: none;
+}
+
+.other-Slider .PrevArrow:hover {
+    background: #c3bfbf;
+}
+
+.other-Slider .PrevArrow:before {
+    content: '\f104';
+}
+
+
+/* end other */
 
 .scroll-down {
     position: absolute;
@@ -1040,9 +1108,62 @@ ul.slick-dots {
     box-shadow: -10px 0px 4px rgba(0, 0, 0, 0.25);
 } */
 
-.Modern-Slider .text-content-other {
+.other-Slider .text-content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.other-Slider .item h3 {
+    margin-bottom: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #FFF;
+    animation: fadeOutRight 1s both;
+}
+
+.other-Slider .item h5 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 200;
+    letter-spacing: 2.5px;
+    color: #FFF;
+    overflow: hidden;
+    animation: fadeOutLeft 1s both;
+}
+
+.other-Slider .item a {
+    margin: 0 5px;
+}
+
+.other-Slider .item.slick-active h3 {
+    animation: fadeInDown 1s both 1s;
+}
+
+.other-Slider .item.slick-active h5 {
+    animation: fadeInLeft 1s both 1.5s;
+}
+
+.other-Slider .item.slick-active {
+    animation: Slick-FastSwipeIn 1s both;
+}
+
+.other-Slider .buttons {
+    position: relative;
+}
+
+
+/* .Modern-Slider {
+    background: #1E1E1E;
+} */
+
+.other-Slider .text-content-other {
     max-width: 440px;
-    max-height: 340px;
+    /* max-height: 340px; */
     position: absolute;
     bottom: 0%;
     left: 10%;
@@ -1058,6 +1179,25 @@ ul.slick-dots {
     background-clip: border-box;
     border: 1px solid #C2C2C2;
     box-shadow: -10px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.other-Slider .text-content-other .card-text p {
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.other-Slider .text-content-other .card-text ul li {
+    color: #000;
+    font-size: 15px;
+    text-align: left;
+    margin: 0px 20px;
+    list-style-type: disc;
+}
+
+.other-Slider .text-content-other .card-text button {
+    float: left;
+    /* margin-bottom: 10px; */
 }
 
 
@@ -1988,7 +2128,7 @@ ol li {
 }
 
 .fit-content ul li {
-    list-style-type: square;
+    list-style-type: disc;
     display: list-item;
     margin-left: 20px;
 }
@@ -2030,7 +2170,7 @@ ol li {
     transition: all 0.2s;
 }
 
-.card-title h6 {
+.card-benefit .card-title h6 {
     height: 30px;
 }
 
@@ -2116,7 +2256,7 @@ product
 }
 
 .card-body-product ul li {
-    list-style-type: square;
+    list-style-type: disc;
     display: list-item;
     margin-left: 20px;
     font-size: 15px;
