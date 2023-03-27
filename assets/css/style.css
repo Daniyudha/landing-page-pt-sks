@@ -894,6 +894,13 @@ banner
     }
 }
 
+@media (max-width:430px) {
+    .img-fill-other img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 *,
 *:before,
 *:after {
@@ -968,6 +975,53 @@ banner
 
 .Modern-Slider .PrevArrow:before {
     content: '\f104';
+}
+
+@media (max-width:430px) {
+    .Modern-Slider .PrevArrow {
+        position: absolute;
+        top: 70%;
+        right: -100px;
+        border: 0 none;
+        background-color: transparent;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'FontAwesome';
+        color: #FFF;
+        z-index: 5;
+        outline: none;
+    }
+    .Modern-Slider .NextArrow {
+        position: absolute;
+        top: 70%;
+        right: 80px;
+        border: 0 none;
+        background-color: transparent;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'FontAwesome';
+        color: #FFF;
+        z-index: 5;
+        outline: none;
+    }
+}
+
+@media (max-width:380px) {
+    .Modern-Slider .PrevArrow {
+        right: -120px;
+    }
+    .Modern-Slider .NextArrow {
+        right: 50px;
+    }
+}
+
+@media (max-width:325px) {
+    .Modern-Slider .PrevArrow {
+        right: -100px;
+    }
+    .Modern-Slider .NextArrow {
+        right: 30px;
+    }
 }
 
 
@@ -1126,19 +1180,6 @@ ul.slick-dots {
     background: #1E1E1E;
 }
 
-
-/* .Modern-Slider .text-content-other {
-    width: 440px;
-    height: 340px;
-    color: #000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #FFFFFF;
-    box-shadow: -10px 0px 4px rgba(0, 0, 0, 0.25);
-} */
-
 .other-Slider .text-content {
     width: 80%;
     position: absolute;
@@ -1229,6 +1270,87 @@ ul.slick-dots {
 .other-Slider .text-content-other .card-text button {
     float: left;
     /* margin-bottom: 10px; */
+}
+
+@media (max-width:430px) {
+    .other-Slider .card {
+        border-radius: 0;
+        height: 430px;
+    }
+    .other-Slider .card .card-text p {
+        color: #000;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .other-Slider .card .card-text ul li {
+        color: #000;
+        font-size: 15px;
+        text-align: left;
+        margin: 0px 20px;
+        list-style-type: disc;
+    }
+    .other-Slider .card .card-text button {
+        float: left;
+        /* margin-bottom: 10px; */
+    }
+    .other-Slider .PrevArrow {
+        top: 101%;
+        left: 310px;
+        background: transparent;
+        color: #fff;
+    }
+    .other-Slider .PrevArrow:hover {
+        background: transparent;
+        color: #7a7a7a;
+    }
+    .other-Slider .NextArrow {
+        top: 101%;
+        right: 0px;
+        background: transparent;
+        color: #fff;
+    }
+    .other-Slider .NextArrow:hover {
+        background: transparent;
+        color: #7a7a7a;
+    }
+}
+
+@media (max-width:380px) {
+    .other-Slider .card {
+        border-radius: 0;
+        height: 450px;
+    }
+    .other-Slider .PrevArrow {
+        top: 101%;
+        left: 260px;
+        background: transparent;
+        color: #fff;
+    }
+    .other-Slider .NextArrow {
+        top: 101%;
+        right: 0px;
+        background: transparent;
+        color: #fff;
+    }
+}
+
+@media (max-width:325px) {
+    .other-Slider .card {
+        border-radius: 0;
+        height: 490px;
+    }
+    .other-Slider .PrevArrow {
+        top: 101%;
+        left: 210px;
+        background: transparent;
+        color: #fff;
+    }
+    .other-Slider .NextArrow {
+        top: 101%;
+        right: 0px;
+        background: transparent;
+        color: #fff;
+    }
 }
 
 
@@ -1392,8 +1514,8 @@ Product
 
 .other-product {
     margin: 50px 0px;
-    padding-top: 80px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 80px;
     background-image: url(../images/bg-certificate.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -1553,6 +1675,13 @@ contact
     font-size: 15px;
     color: #000;
     font-weight: 400;
+}
+
+@media (max-width:430px) {
+    .contact {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 
