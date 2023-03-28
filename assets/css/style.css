@@ -1970,7 +1970,7 @@ portfolio
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width:768px) {
+@media (max-width:821px) {
     #projects .filters ul li {
         border: 1px solid #1E1E1E;
         padding: 5px 10px !important;
